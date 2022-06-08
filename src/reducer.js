@@ -19,7 +19,7 @@ export const  reducer=(state=initialstate,action)=>{
     return {...state};
  }
  case "ADD":{
-    state.count=state.count+action.payload;
+    state.count+=Number(action.payload);
     return {...state};
  }
  case "MUL":{
